@@ -38,6 +38,6 @@ def Json_data_func(request, pretty=False):
 
     
 def api(self):    
-    return JsonResponse(json.loads(json_data.Command.handle(self)), safe=False)
+    return JsonResponse(json.loads(json_data.Command.handle(self)), safe=False) #the handle() method returns the data
 
     
