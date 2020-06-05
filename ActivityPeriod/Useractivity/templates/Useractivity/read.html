@@ -1,0 +1,33 @@
+
+<table class="table table-bordered">
+    <thead class="alert-success">
+        <tr>
+            <th style="width: 7%px;">Real Name</th>
+            <th style="width: 7%px;">Timezone</th>
+            <th style="width: 7%px;">Start Time 1</th>
+            <th style="width: 12%px;">End Time 1</th>
+            <th style="width: 7%px;">Start Time 2</th>
+            <th style="width: 12%px;">End Time2</th>
+            <th style="width: 7%px;">Start Time 3</th>
+            <th style="width: 12%px;">End Time 31</th>
+           
+        
+        </tr>
+    </thead>
+    <tbody>
+        {% for member in members %}
+        <tr>
+           
+            <td>{{ member.real_name }}</td>
+            <td>{{ member.time_field }}</td>
+            <td>{{ member.start_time1 }}</td>
+            <td>{{ member.end_time1 }}</td>
+            <td>{{ member.start_time2 }}</td>
+            <td>{{ member.end_time2 }}</td>
+            <td>{{ member.start_time3 }}</td>
+            <td>{{ member.end_time3 }}</td>
+            <!-- <td>{{ member.created_ip }}</td> -->
+                    </tr>
+        {% endfor %}
+    </tbody>
+</table>

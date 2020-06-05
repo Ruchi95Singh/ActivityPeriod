@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Useractivity/css/bootstrap.css' %}"/>
+    <meta charset="UTF-8" name="viewport" content="width=device-width"/>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <!-- <div class="container-fluid">
+            <a class="navbar-brand" href="#">User Activity</a>
+        </div> -->
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+        <h3 class="text-primary">User Activity</h3>
+        <hr style="border-top:1px dotted #ccc;"/>
+        {% block body %}
+
+        {% endblock %}
+    </div>
+</body>
+
+</html>
+<script src="{% static 'Useractivity/js/jquery-3.2.1.js'%}"></script>
+<script src="{% static 'Useractivity/js/script.js' %}"></script>
+<style>
+    .actv{
+        border-bottom: 1px solid black;
+        margin-bottom: 35px;
+        padding-bottom: 20px;
+              
+    }
+    .btn_create{
+
+        margin :2% 50%;
+     
+    }
+    .frm{
+        text-align: center;
+    }
+    .well{
+        width: 100%;
+    }
+</style>

@@ -1,0 +1,11 @@
+{% extends 'Useractivity/base.html' %}
+{% block body %}
+<form class="form-inline" action="" method ="POST">
+    {% csrf_token %}
+    {{form}}
+   
+</form>
+<br />
+<div id="result">
+</div>
+{% endblock %}

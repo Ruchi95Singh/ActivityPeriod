@@ -1,0 +1,38 @@
+{% extends 'Useractivity/base.html' %}
+{% block body %}
+<form class="form-inline frm" action="" method ="POST">
+    {% csrf_token %}
+  
+    <div class="form-group">
+        <label>Real Name</label>
+        <input type="text" id="real_name" class="form-control" style="width:30%;" required="required"/>
+        <label>Timezone</label>
+        <input type="text" id="timezone" class="form-control" style="width:30%;" required="required"/>
+
+        <h1 class="actv">Activity Periods</h1>
+        
+        <label>Start Time</label>
+        <input type="datetime-local" id="st1" class="form-control" style="width:30%;" required="required"/>
+        <label>End Time</label>
+        <input type="datetime-local" id="et1" class="form-control" style="width:30%;" required="required"/>
+      
+        <hr>
+        <label>Start Time</label>
+        <input type="datetime-local" id="st2" class="form-control" style="width:30%;" required="required"/>
+        <label>End Time</label>
+        <input type="datetime-local" id="et2" class="form-control" style="width:30%;" required="required"/>
+       
+        <hr>
+        <label>Start Time</label>
+        <input type="datetime-local" id="st3" class="form-control" style="width:30%;" required="required"/>
+        <label>End Time</label>
+        <input type="datetime-local" id="et3" class="form-control" style="width:30%;" required="required"/>
+        <div>
+        <button type="button" id="create" class="btn btn-sm btn-primary btn_create">Create</button>
+    </div>
+    </div>
+</form>
+<br />
+<div id="result">
+</div>
+{% endblock %}
