@@ -23,7 +23,7 @@ in Json Format on the url http://127.0.0.1:8000/Useractivity/json_data which is 
 The views.py has 4 functions, among which the api() function returns the data from jason_data.py file.
 
 To run the project :- 
- clone it using "git clone https://github.com/Ruchi95Singh/ActivityPeriod.git"
+ clone it using "git clone https://github.com/Ruchi95Singh/ActivityPeriod/tree/User"
  
  1. Run the command "python manage.py jason_data"
  2. Run the command "python manage.py runserver" 
